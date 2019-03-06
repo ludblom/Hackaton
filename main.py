@@ -6,7 +6,7 @@ def findJoke(words):
     jokeList = jokeList.read()
     jokeList = jokeList.split("####")
     
-    print(type(jokeList))
+    #print(type(jokeList))
     
     for word in words:
         for i in range(len(jokeList)):
@@ -16,10 +16,8 @@ def findJoke(words):
         if(len(matchedJokes) != 0):
             break
 
-    #print(matchedJokes)
-    #print(randint(0,len(matchedJokes)))
     if(len(matchedJokes) == 0):
-        return "Schtopid!"
+        return "Schtoopid!"
     return jokeList[matchedJokes[randint(0,len(matchedJokes)-1)]]
     #return matchedJokes[randint(0,len(matchedJokes)-1)]
 

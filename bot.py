@@ -34,7 +34,7 @@ def parse_direct_mention(message_text):
     """
     matches = re.search(MENTION_REGEX, message_text)
     # the first group contains the username, the second group contains the remaining message
-    return test.findShrink(message_text)
+    return test.findJokeR(message_text)
 
 def handle_command(command, channel):
     response = command

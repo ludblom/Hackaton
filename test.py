@@ -22,7 +22,7 @@ def getFrequency(word) :
 	if (word.lower() in wordFreqs) :
 		this_freq = wordFreqs[word.lower()]
 	else :
-		this_freq = 0
+		this_freq = 5000
 	return this_freq
 
 def sortFrequency(message) :
@@ -35,7 +35,7 @@ shrink = [
 	("And how does ", ", in general, make you feel?") ,
 	("Why do you think you said ", "?") ,
 	("You talk about ", ", do you feel that is important to you?"),
-	("What's your oppinion on ", "?"),
+	("What's your opinion on ", "?"),
 	("Would you say that you like ", "?"),
 	("Tell me more about ", ", please."),
 	("What do you mean when you say ", "?")

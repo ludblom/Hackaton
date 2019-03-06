@@ -1,17 +1,15 @@
 class Joke:
     jokelist = ["a b c, b c d, c d e, d e f"]
 
+    def __init__(self):
+        wordlist = []
+
     # separates jokes
     def separatejokes(jokeslist):
         return jokeslist.split("####")
-    separatedjokes = []
-    for joke in jokelist:
-        separatedjokes.append(separatejokes(jokelist))
 
     # list of all words in all jokes
-    wordlist = []
     def createwordlist(jokeslist):
-        wordlist = []
         for w in wordlist:
             wordlist.append(wordlist[w])
 
